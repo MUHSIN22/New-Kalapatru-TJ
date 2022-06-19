@@ -1,4 +1,6 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from '../../Screens/Home/Home'
 import Header from '../Header/Header'
 
 export const Container = ({children}) => {
@@ -7,7 +9,9 @@ export const Container = ({children}) => {
             <Header />
 
             <div className='children'> 
-                {children}
+                <Routes>
+                    <Route path='/' element={<Home/>}/>
+                </Routes>
             </div>
 
         </div>
