@@ -9,7 +9,6 @@
 }
 
 body{
- 
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,18 +24,15 @@ html{
 .section-title{
   font-size: 1.8rem;
   font-weight: 600;
-  color: #122E99;
   text-align: center;
 }
 .section-subtitle{
   font-size: 1.4rem;
   font-weight: 500;
-  color: #122E99;
   margin: 0.5rem 0;
   width: 100%;
 }
 .section-title2{
-  color: #122E99;
     font-weight: 500;
     font-size: 1.4rem;
     margin-bottom: 0;
