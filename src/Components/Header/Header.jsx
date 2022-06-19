@@ -2,11 +2,13 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import navigationList from '../../JSON DB/navigationList'
 import './Header.css'
+import {faSortDown} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
     const hamRef = useRef(null);
-    
     const navListRef = useRef(null);
+
 
     const hamburgerClickHandler = (event) => {
         hamRef.current.classList.toggle("hamburger--active")
@@ -64,6 +66,7 @@ export default function Header() {
                                     <>
                                         <span className="nav-item-expand">
                                             {item.title}
+                                            <FontAwesomeIcon icon={faSortDown}/>
                                         </span>
                                         <ul className="nav-dropdown">
                                             {
