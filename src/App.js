@@ -1,10 +1,16 @@
-
+import { Fragment } from 'react';
+import { BrowserRouter as Router, Routes } from 'react-router-dom'
+import Header from './Components/Header/Header';
 
 function App() {
   return (
-    <>
-      Let's start
-    </>
+    <Router>
+      <Header />
+      <Routes>
+
+      </Routes>
+    </Router>
+
   );
 }
 

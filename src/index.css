@@ -12,6 +12,7 @@ body{
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 7rem;
 }
 *{
   box-sizing: border-box;
@@ -20,6 +21,9 @@ body{
 }
 html{
   scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
 }
 .section-title{
   font-size: 1.8rem;
@@ -44,6 +48,11 @@ html{
 }
 .container-padding{
   padding: 1rem 5%;
+}
+@media only screen and (max-width: 920px) {
+  body{
+    padding-top: 5rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .section-title{
