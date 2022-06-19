@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import navigationList from '../../JSON DB/navigationList'
 import './Header.css'
-import {faSortDown} from '@fortawesome/free-solid-svg-icons'
+import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
@@ -17,19 +17,19 @@ export default function Header() {
 
     const expandNavItem = (event) => {
         let activeItem = document.querySelector(".nav-item--active")
-        if(window.innerWidth <= 920 && (event.target.className === "nav-item" || event.target.className === "nav-item nav-item--active")){
+        if (window.innerWidth <= 920 && (event.target.className === "nav-item" || event.target.className === "nav-item nav-item--active")) {
             event.target.classList.toggle("nav-item--active")
-            if(activeItem){
+            if (activeItem) {
                 activeItem.classList.remove("nav-item--active")
             }
         }
     }
 
-    const expandDropdownItem= (event) => {
+    const expandDropdownItem = (event) => {
         let activeItem = document.querySelector(".dropdown-item--active")
-        if(window.innerWidth <= 920 && (event.target.className === "dropdown-item" || event.target.className === "dropdown-item dropdown-item--active")){
+        if (window.innerWidth <= 920 && (event.target.className === "dropdown-item" || event.target.className === "dropdown-item dropdown-item--active")) {
             event.target.classList.toggle("dropdown-item--active")
-            if(activeItem){
+            if (activeItem) {
                 activeItem.classList.remove("dropdown-item--active")
             }
         }
@@ -38,13 +38,13 @@ export default function Header() {
     const closeNav = () => {
         let activeItem = document.querySelector(".nav-item--active")
         let activeDropdown = document.querySelector(".dropdown-item--active")
-        if(window.innerWidth <= 920){
+        if (window.innerWidth <= 920) {
             hamRef.current.classList.remove("hamburger--active")
             navListRef.current.classList.remove('nav-list--active')
-            if(activeDropdown){
+            if (activeDropdown) {
                 activeDropdown.classList.remove("dropdown-item--active")
             }
-            if(activeItem){
+            if (activeItem) {
                 activeItem.classList.remove("nav-item--active")
             }
         }
@@ -66,19 +66,19 @@ export default function Header() {
                                     <>
                                         <span className="nav-item-expand">
                                             {item.title}
-                                            <FontAwesomeIcon icon={faSortDown}/>
+                                            <FontAwesomeIcon icon={faSortDown} />
                                         </span>
                                         <ul className="nav-dropdown">
                                             {
-                                                item.dropOptions.map((dropItem, ind) => (
+                                                item.dropOptions && item.dropOptions.map((dropItem, ind) => (
                                                     <li key={ind} className="dropdown-item" onClick={expandDropdownItem}>
                                                         {
                                                             dropItem.type === 'link' ?
-                                                                <Link to="/" onClick={closeNav}>{dropItem.title}</Link>
+                                                                <Link to="/" onClick={closeNav}>{dropItem.title} </Link>
                                                                 :
                                                                 <>
                                                                     <span className='nav-item-expand'>
-                                                                        {dropItem.title}
+                                                                        {dropItem.title}   <FontAwesomeIcon icon={faSortDown} />
                                                                     </span>
                                                                     <ul className="nav-child-drop">
                                                                         {
