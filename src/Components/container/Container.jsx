@@ -9,9 +9,7 @@ export const Container = ({children}) => {
             <Header />
 
             <div className='children'> 
-                <Routes>
-                    <Route path='/' element={<Home/>}/>
-                </Routes>
+                {children}
             </div>
 
         </div>

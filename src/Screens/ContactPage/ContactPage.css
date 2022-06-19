@@ -1,0 +1,41 @@
+.contact-page .contact-banner{
+    background: #FFF6EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-banner .main-title{
+    text-align: center;
+}
+.contacts{
+    box-shadow: var(--shadow-primary);
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+    border-radius: 30px;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+.contact-banner .contact-list{
+    list-style: none;
+}
+.contact-banner .contact-list li{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.contact-banner .contact-icon-wrapper{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: #FFF6EA;
+    box-shadow: var(--shadow-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.contact-banner .contact-icon{
+    width: 2.5rem;
+}

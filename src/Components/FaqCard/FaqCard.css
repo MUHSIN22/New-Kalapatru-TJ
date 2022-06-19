@@ -41,10 +41,17 @@
     transform: rotateY(180deg);
 }
 .flipped-faq .card-back{
-    transform: rotateY(360deg);
+    transform: rotateY(0deg);
 }
 @media only screen and (max-width: 1000px) {
     .faq-card{
         width: calc(100% / 2 - 1rem);
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .faq-card{
+        width: 100%;
+        margin: 1rem 0;
     }
 }
