@@ -1,0 +1,50 @@
+.faq-card{
+    width: calc(100% / 4 - 1rem);
+    box-shadow: var(--shadow-primary);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'card-body';
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+.faq-card .section-para{
+    text-align: center;
+}
+.faq-card .card-front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: card-body;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.3s ease;
+}
+.faq-card .card-back{
+    grid-area: card-body;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-card .faq-img{
+    width: 90%;
+}
+.faq-card .faq-arrow{
+    width: 3rem;
+}
+.flipped-faq .card-front{
+    transform: rotateY(180deg);
+}
+.flipped-faq .card-back{
+    transform: rotateY(360deg);
+}
+@media only screen and (max-width: 1000px) {
+    .faq-card{
+        width: calc(100% / 2 - 1rem);
+    }
+}

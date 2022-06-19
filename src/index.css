@@ -25,6 +25,9 @@ html{
 a{
   text-decoration: none;
 }
+.main-title{
+  font-size: 3rem;
+}
 .section-title{
   font-size: 1.8rem;
   font-weight: 600;
@@ -49,6 +52,11 @@ a{
 .container-padding{
   padding: 1rem 5%;
 }
+@media only screen and (max-width: 1200px) {
+  .main-title{
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (max-width: 920px) {
   body{
     padding-top: 5rem;
@@ -65,9 +73,7 @@ a{
     font-size: 1.2rem;
   }
   .section-title2{
-    
-      font-size: 1.2rem;
-     
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -87,5 +93,14 @@ a{
   }
   .container-padding{
     padding: 1rem;
+  }
+
+  .main-title{
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .main-title{
+    font-size: 1.6rem;
   }
 }
