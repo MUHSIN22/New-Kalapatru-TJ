@@ -1,11 +1,8 @@
 .faq-card{
     width: calc(100% / 4 - 1rem);
-    box-shadow: var(--shadow-primary);
-    border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 'card-body';
-    padding: 1rem;
     transition: all 0.3s ease;
 }
 .faq-card .section-para{
@@ -19,6 +16,9 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow-primary);
+    border-radius: 10px;
+    padding: 1rem;
 }
 .faq-card .card-back{
     grid-area: card-body;
@@ -30,6 +30,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--shadow-primary);
+    border-radius: 10px;
+    padding: 1rem;
 }
 .faq-card .faq-img{
     width: 90%;

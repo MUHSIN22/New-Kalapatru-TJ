@@ -1,0 +1,12 @@
+.home-slider{
+    display: grid;
+    transition: all 0.3s ease;
+}
+.home-slider .slider-item{
+    height: 10rem;
+    display: grid;
+    place-items: center;
+    background: brown;
+    color: #fff;
+    width: 100%;
+}

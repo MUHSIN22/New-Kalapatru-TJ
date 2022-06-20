@@ -1,7 +1,8 @@
 export default [
     {
         title: "About Us",
-        type: 'link'
+        type: 'link',
+        link: ""
     },
     {
         title: "Services",
@@ -12,16 +13,20 @@ export default [
                 type: 'dropdown',
                 dropOptions:[
                     {
-                        "title": "Mutual Funds"
+                        "title": "Mutual Funds",
+                        link: ""
                     },
                     {
-                        "title": "NPS"
+                        "title": "NPS",
+                        link: ""
                     },
                     {
-                        "title": "Bonds"
+                        "title": "Bonds",
+                        link: ""
                     },
                     {
-                        "title": "Tax saving schemas"
+                        "title": "Tax saving schemas",
+                        link: ""
                     },
                 ]
             },
@@ -30,42 +35,52 @@ export default [
                 type: 'dropdown',
                 dropOptions:[
                     {
-                        "title": "Equity"
+                        "title": "Equity",
+                        link: ""
                     },
                     {
-                        "title": "F&O"
+                        "title": "F&O",
+                        link: ""
                     },
                     {
-                        "title": "Commodity"
+                        "title": "Commodity",
+                        link: ""
                     },
                     {
-                        "title": "SLB"
+                        "title": "SLB",
+                        link: ""
                     },
                 ]
             },
             {
                 title: "Depository",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "SLB",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "IPO",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "General Insurance",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "Pan Card",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "SGB",
-                type: 'link'
+                type: 'link',
+                link: ""
             }
         ]
     },
@@ -75,40 +90,49 @@ export default [
         dropOptions:[
             {
                 title: "Advisory For Investors",
-                type: 'link'
+                type: 'link',
+                link: "/advisory-of-investors"
             },
             {
                 title: "List Of Charges",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "Margin Calculator",
-                type: 'link'
+                type: 'link',
+                link: "/margin-calculator"
             },
             {
                 title: "News & Announcement",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "Privacy Policy",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "Terms Of Use",
-                type: 'link'
+                type: 'link',
+                link: ""
             },
             {
                 title: "Downloads",
-                type: 'link'
+                type: 'link',
+                link: ""
             }
         ]
     },
     {
         title: "Partner With Us",
-        type: 'link'
+        type: 'link',
+        link: ""
     },
     {
         title: "Blog",
-        type: 'link'
+        type: 'link',
+        link: "/blog"
     }
 ]

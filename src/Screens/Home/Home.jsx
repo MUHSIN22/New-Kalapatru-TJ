@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Home.css'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,10 +6,19 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import FaqCard from '../../Components/FaqCard/FaqCard';
+import HomeSlider from '../../Components/HomeSlider/HomeSlider';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import SliderCard from '../../Components/sliderCard/SliderCard';
 
 export default function Home() {
+    const sliderContainer = useRef(null)
+    useEffect(() => {
+        console.log(sliderContainer.current.offsetWidth);
+    },[])
   return (
     <main className="home-page">
+        {/* <button className="btn-quick-service">Quick Service</button> */}
         <section className="home-banner container-padding">
             <div className="image-section">
                 <img src="/images/home/home-banner-img.png" className='home-banner-img' alt="" />
@@ -163,6 +172,28 @@ export default function Home() {
 
             <div className="service-image-wrapper">
                 <img src="/images/home/service.png" alt="" className="service-image" />
+            </div>
+        </section>
+
+
+        <section className="client-testimonial">
+            <h1 className="section-title">Client's Testimonials</h1>
+            <div className="testimonials-wrapper container-padding">
+                <div className="navigation-wrapper">
+                    <img src="/images/home/left-arrow.png" alt="" className="navigation" />
+                    <img src="/images/home/right-arrow.png" alt="" className="navigation" />
+                </div>
+                <div className="slider-container" ref={sliderContainer}>
+                    <OwlCarousel className='owl-theme' loop margin={24} items={5}>
+                        <SliderCard/>
+                        <SliderCard/>
+                        <SliderCard/>
+                        <SliderCard/>
+                        <SliderCard/>
+                        <SliderCard/>
+                        <SliderCard/>
+                    </OwlCarousel>
+                </div>
             </div>
         </section>
 

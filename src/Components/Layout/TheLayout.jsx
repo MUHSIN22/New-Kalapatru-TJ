@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Blog from '../../Screens/Blog/Blog'
 import ContactPage from '../../Screens/ContactPage/ContactPage'
 import Home from '../../Screens/Home/Home'
+import InvestorCorner from '../../Screens/InvestorCorner/InvestorCorner'
 import MarginCalculator from '../../Screens/MarginCalculator/MarginCalculator'
 import Payment from '../../Screens/Payment/Payment'
 import { Container } from '../container/Container'
@@ -17,6 +18,7 @@ export const TheLayout = () => {
             <Route path='/contact-us' element={<ContactPage/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route path='/payment' element={<Payment/>} />
+            <Route path="/advisory-of-investors" element={<InvestorCorner/>} />
           </Routes>
         </Container>
     </>

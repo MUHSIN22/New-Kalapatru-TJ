@@ -1,0 +1,99 @@
+.investor-attention-card{
+    width: calc(100% / 4 - 4rem);
+    background: transparent;
+    border-radius: 10px;
+    margin: 2rem;
+    padding-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+.investor-attention-card--active{
+    background: var(--dark-primary);
+}
+.investor-attention-card .section-para{
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.investor-attention-card .arrow-wrapper{
+    pointer-events: none;
+}
+.investor-attention-card--active .section-para{
+    color: #fff;
+}
+.arrow-wrapper{
+    display: flex;
+    align-items: center;
+}
+.investor-attention-card .h-line{
+    flex: 1;
+    height: 1rem;
+    background: #C53F3F;
+    transition: all 0.3s ease;
+}
+.investor-attention-card--active .h-line{
+    background: #fff;
+}
+.investor-attention-card .h-line:first-child{
+    margin-right: -2px;
+}
+.investor-attention-card .h-line:first-child::before{
+    content: "";
+    height: 1rem;
+    background: #C53F3F;
+    width: 2rem;
+    transform: translateX(-2rem);
+    display: block;
+}
+.investor-attention-card .h-line:last-child::after{
+    content: "";
+    height: 1rem;
+    background: #C53F3F;
+    width: 2rem;
+    margin-left: auto;
+    transform: translateX(2rem);
+    display: block;
+}
+.investor-attention-card .h-line:last-child{
+    margin-left: -2px;
+}
+.investor-attention-card .circle{
+    width: 2rem;
+    height: 2rem;
+    background: #C53F3F;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.investor-attention-card--active .circle{
+    background: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+    .investor-attention-card{
+        width: calc(100% / 4 - 2rem);
+        margin: 1rem;
+    }
+    .investor-attention-card .h-line:first-child::before{
+        width: 1rem;
+        transform: translateX(-1rem);
+    }
+    .investor-attention-card .h-line:last-child::after{
+        width: 1rem;
+        transform: translateX(1rem);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .investor-attention-card{
+        width: calc(100% / 2 - 4rem);
+        margin: 1rem;
+    }
+    .investor-attention-card .h-line:first-child::before{
+        width: 2rem;
+        transform: translateX(-2rem);
+    }
+    .investor-attention-card .h-line:last-child::after{
+        width: 2rem;
+        transform: translateX(2rem);
+    }
+}

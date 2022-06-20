@@ -1,0 +1,88 @@
+.investor-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 'content image';
+    grid-gap: 2rem;
+    height: 40rem;
+}
+.investor-banner .content-section{
+    grid-area: content;
+    align-self: center;
+    justify-self: center;
+}
+.investor-banner .banner-img-wrapper{
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+}
+.investor-banner .banner-img{
+    height: 100%;
+}
+.investor-banner .main-title{
+    text-align: center;
+}
+.investor-banner .section-subtitle{
+    margin-top: 1rem;
+    text-align: center;
+}
+.beware-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.beware-section .beware-img{
+    width: 100%;
+    max-width: 1400px;
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+.investor-attention .attention-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.investor-attention .attention-container::-webkit-scrollbar{
+    display: none;
+}
+.investor-attention .section-title{
+    color: red;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1300px) {
+    .investor-banner{
+        height: auto;
+    }
+    .investor-banner .banner-img{
+        height: auto;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .investor-banner{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'content''image';
+    }
+    .investor-banner .banner-img-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .investor-attention .attention-wrapper{
+        width: 200%;
+    }
+    .investor-attention .attention-container{
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .beware-section .beware-img{
+        margin: 1rem 0;
+        border: 10px;
+    }
+    .beware-section .section-subtitle{
+        text-align: justify;
+    }
+    .investor-attention .attention-wrapper{
+        width: 400%;
+    }
+}

@@ -32,6 +32,19 @@
     cursor: pointer;
 }
 
+.btn-quick-service{
+    background: var(--dark-primary);
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(270deg);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 /* Welcome section */
 .home-page .welcome-section{
     display: grid;
@@ -303,6 +316,30 @@
     width: 100%;
 }
 
+/* Client's testimonial section */
+.testimonials-wrapper{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: 'navigation carousel';
+    background: #FFF6EA;
+    grid-gap: 2rem;
+}
+.testimonials-wrapper .navigation-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: navigation;
+}
+.testimonials-wrapper .slider-container{
+    grid-area: carousel;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-container .slider-item{
+    background: red;
+}
 
 /* FAQ section */
 .faq-section .faq-wrapper{
@@ -311,6 +348,7 @@
     margin: 3rem 0;
     flex-wrap: wrap;
 }
+
 
 @media only screen and (max-width: 1400px) {
     .home-page .features-section{

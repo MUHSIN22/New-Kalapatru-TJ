@@ -61,7 +61,7 @@ export default function Header() {
                         <li className='nav-item' key={index} onClick={expandNavItem}>
                             {
                                 item.type === 'link' ?
-                                    <Link to="/" onClick={closeNav}>{item.title}</Link>
+                                    <Link to={item.link} onClick={closeNav}>{item.title}</Link>
                                     :
                                     <>
                                         <span className="nav-item-expand">
@@ -74,7 +74,7 @@ export default function Header() {
                                                     <li key={ind} className="dropdown-item" onClick={expandDropdownItem}>
                                                         {
                                                             dropItem.type === 'link' ?
-                                                                <Link to="/" onClick={closeNav}>{dropItem.title} </Link>
+                                                                <Link to={dropItem.link} onClick={closeNav}>{dropItem.title} </Link>
                                                                 :
                                                                 <>
                                                                     <span className='nav-item-expand'>
@@ -84,7 +84,7 @@ export default function Header() {
                                                                         {
                                                                             dropItem.dropOptions.map((dropChild, key) => (
                                                                                 <li key={key}>
-                                                                                    <Link to="/" onClick={closeNav}>{dropChild.title}</Link>
+                                                                                    <Link to={dropChild.link} onClick={closeNav}>{dropChild.title}</Link>
                                                                                 </li>
                                                                             ))
                                                                         }
