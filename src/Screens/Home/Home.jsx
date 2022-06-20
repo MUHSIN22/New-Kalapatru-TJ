@@ -1,15 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Home.css'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FaqCard from '../../Components/FaqCard/FaqCard';
-import HomeSlider from '../../Components/HomeSlider/HomeSlider';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import SliderCard from '../../Components/sliderCard/SliderCard';
 import FaqList from '../../JSON DB/FaqList';
 
 export default function Home() {

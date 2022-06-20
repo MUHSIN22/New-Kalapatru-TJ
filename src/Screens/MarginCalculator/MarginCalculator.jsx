@@ -9,7 +9,7 @@ export default function MarginCalculator() {
             <section className="margin-banner container-padding">
                 <div className="content-section">
                     <h1 className="main-title">Margin Calculator</h1>
-                    <h3 className="section-subtitle">Regulatory statements & <br /> Complaint Redressal Details</h3>
+                    <h3 className="section-subtitle">You can enter your equity stock position and determine your required margin using the equity margin calculator.</h3>
                 </div>
                 <div className="banner-img-wrapper">
                     <img src="/images/margin calculator/banner.png" alt="" className="banner-img" />

@@ -1,7 +1,7 @@
 import React from 'react'
 import './InvestorAttentionCard.css'
 
-export default function InvestorAttentionCard() {
+export default function InvestorAttentionCard({data}) {
     const investorAttentionActivator = (event) => {
         let activeCard = document.querySelector(".investor-attention-card--active")
         if(activeCard){
@@ -11,7 +11,7 @@ export default function InvestorAttentionCard() {
     }
   return (
     <div className="investor-attention-card" onClick={investorAttentionActivator}>
-        <h3 className="section-para">Beware of fixed / guaranteed / regular returns</h3>
+        <h3 className="section-para">{data}</h3>
         <div className="arrow-wrapper">
             <span className="h-line"></span>
             <span className="circle"></span>

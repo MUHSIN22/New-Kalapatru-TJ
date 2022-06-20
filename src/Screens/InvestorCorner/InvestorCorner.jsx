@@ -7,8 +7,8 @@ export default function InvestorCorner() {
     <main className="investor-page">
             <section className="investor-banner container-padding">
                 <div className="content-section">
-                    <h1 className="main-title">Advisory for Investors</h1>
-                    <h3 className="section-subtitle">Regulatory statements & Complaint Redressal DetailsStatements about latest  rules and regulations set by regulatory authoritie</h3>
+                    <h1 className="main-title">Expert Advisory for Investors!</h1>
+                    <h3 className="section-subtitle">Rules and Regulations set by Regulatory Authorities!</h3>
                 </div>
                 <div className="banner-img-wrapper">
                     <img src="/images/investor/banner.png" alt="" className="banner-img" />
@@ -19,10 +19,10 @@ export default function InvestorCorner() {
                 <h1 className="section-title">Attention Investors!</h1>
                 <div className="attention-container">
                     <div className="attention-wrapper">
-                        <InvestorAttentionCard/>
-                        <InvestorAttentionCard/>
-                        <InvestorAttentionCard/>
-                        <InvestorAttentionCard/>
+                        <InvestorAttentionCard data="Investors must beware of fixed guaranteed / regular returns"/>
+                        <InvestorAttentionCard data="Do not keep funds Idle with the Stock Broker"/>
+                        <InvestorAttentionCard data="Brokers are not permitted to accept, transfer of securities as margin "/>
+                        <InvestorAttentionCard data="Always keep your contact details via current / updated mobile number / email id"/>
                     </div> 
                 </div>
             </section>
@@ -31,9 +31,9 @@ export default function InvestorCorner() {
                 <h1 className="section-title">Beware of fixed / guaranteed / regular returns</h1>
                 <img src="/images/investor/beware.png" alt="" className="beware-img" />
                 <p className="section-subtitle">
-                    Beware of fixed / guaranteed / regular returns / capital protection schemes. Brokers or their authorized persons or any of their associates are not authorized to offer fixed / guaranteed / regular returns / capital protection on your investment or authorized to enter into any loan agreement with you to pay interest on the funds offered by you. 
+                    Avoid fixed-return, guaranteed-return, regular-return, and capital-protection programs. Brokers, their authorized representatives, or any of their colleagues are not permitted to provide fixed, guaranteed, consistent returns on your investment, or capital protection, nor are they permitted to engage in any loan agreements with you to cover the interest on the funds you offer.
                     <br /><br />
-                    Please note that in case of default of a member claim for funds or securities given to the broker under any arrangement/ agreement of indicative return will not be accepted by the relevant Committee of the Exchange as per the approved norms.
+                    Please be aware that the relevant Committee of the Exchange, in accordance with the authorized rules, will not accept a claim for monies or securities delivered to the broker under any arrangement or agreement of indicative return in the event of a member's default.
                 </p>
             </section>
         </main>
