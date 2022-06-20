@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactUsBlock from '../../Components/ContactUs-Block/ContactUsBlock'
 import TablePrimary from '../../Components/TablePrimary/TablePrimary'
 import marginList from '../../JSON DB/marginList'
 import './MarginCalculator.css'
@@ -31,6 +32,10 @@ export default function MarginCalculator() {
                 <div className="table-wrapper">
                     <TablePrimary data={marginList.nse}/>
                 </div>
+            </section>
+
+            <section className="contact-container container-padding">
+                <ContactUsBlock />
             </section>
 
         </main>

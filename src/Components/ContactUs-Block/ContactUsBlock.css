@@ -1,0 +1,75 @@
+.ContactUsBlock-Container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ContactUs-Card {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff6ea;
+  position: relative;
+  gap: 2rem;
+}
+.ContactUs-Upper-Cup {
+  width: 10%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.ContactUs-Lower-Cup {
+  width: 10%;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+}
+.ContactUs-link {
+  width: 20%;
+  background-color: #103e60;
+  border-radius: 10px;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+  color: #fff6ea;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1030px){
+  .ContactUs-Upper-Cup{
+    width: 10%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+  .ContactUs-link{
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .ContactUs-Upper-Cup {
+    display: none;
+  }
+  .ContactUs-Lower-Cup {
+    display: none;
+  }
+  .ContactUsBlock-Container{
+    width: 100%;
+  }
+  .ContactUs-Card{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+  }
+  .ContactUs-link{
+    width: 80%;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+}
