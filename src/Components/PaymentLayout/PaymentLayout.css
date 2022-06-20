@@ -1,0 +1,26 @@
+.payment-layout{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow-primary);
+    margin: 3rem 0;
+}
+.payment-layout .section-title{
+    text-align: left;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background: var(--dark-primary);
+    color: #fff;
+    padding: 1rem;
+}
+.payment-layout .payment-body{
+    padding: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .payment-layout{
+        margin: 1rem 0;
+    }
+    .payment-layout .payment-body{
+        padding: 1rem;
+    }
+}

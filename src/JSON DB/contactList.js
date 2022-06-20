@@ -5,17 +5,17 @@ export default [
         icon: "new account.png"
     },
     {
-        title:"Funds Deposit/Withdrawal",
+        title:"Funds Deposit / Withdrawal",
         data: "254512152323",
         icon: "fund.png"
     },
     {
-        title:"Trading/Dealing",
+        title:"Trading / Dealing",
         data: "254512152323",
         icon: "trading.png"
     },
     {
-        title:"Modification/Reactivation",
+        title:"Modification / Reactivation",
         data: "254512152323",
         icon: "modification.png"
     },
@@ -25,7 +25,7 @@ export default [
         icon: "support.png"
     },
     {
-        title:"Admin/RMS",
+        title:"Admin / RMS",
         data: "254512152323",
         icon: "admin.png"
     },

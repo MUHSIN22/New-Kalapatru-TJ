@@ -1,0 +1,27 @@
+.payment-option-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payment-option-card .section-subtitle{
+    font-weight: 600;
+    text-align: center;
+}
+.payment-option-card .payment-option-logo{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .payment-option-card .payment-option-logo{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .payment-option-card .payment-option-logo{
+        width: 5rem;
+        height: 5rem;
+    }
+}

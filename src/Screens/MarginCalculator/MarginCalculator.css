@@ -57,6 +57,15 @@
     height: 3rem;
     background: var(--red-primary);
 }
+.table-section .table-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 3rem;
+    overflow-x: scroll;
+}
+.table-section .table-wrapper::-webkit-scrollbar{
+    display: none;
+}
 @media only screen and (max-width: 1300px) {
     .margin-banner{
         height: auto;

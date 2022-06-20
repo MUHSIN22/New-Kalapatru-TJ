@@ -1,0 +1,24 @@
+.table-primary{
+   box-shadow: var(--shadow-primary);
+   width: 100%;
+}
+.table-primary thead{
+    background: #fff;
+    text-align: center;
+}
+.table-primary tbody{
+    background: #FFBE9D;
+}
+.table-primary th{
+    padding: 1rem;
+    border-right: 2px solid var(--dark-primary);
+}
+.table-primary td:last-child,
+.table-primary th:last-child{
+    border-right: none;
+}
+.table-primary td{
+    padding: 0.5rem;
+    border-right: 2px solid var(--dark-primary);
+    border-bottom: 2px solid var(--dark-primary);
+}

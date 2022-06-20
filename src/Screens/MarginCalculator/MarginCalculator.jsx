@@ -1,4 +1,6 @@
 import React from 'react'
+import TablePrimary from '../../Components/TablePrimary/TablePrimary'
+import marginList from '../../JSON DB/marginList'
 import './MarginCalculator.css'
 
 export default function MarginCalculator() {
@@ -25,6 +27,9 @@ export default function MarginCalculator() {
                     <button className="btn-tbl">MCX</button>
                     <span className="v-line-red"></span>
                     <button className="btn-tbl">MTF vs FUT</button>
+                </div>
+                <div className="table-wrapper">
+                    <TablePrimary data={marginList.nse}/>
                 </div>
             </section>
 
