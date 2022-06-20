@@ -39,6 +39,7 @@
 }
 .faq-card .faq-arrow{
     width: 3rem;
+    margin-top: auto;
 }
 .flipped-faq .card-front{
     transform: rotateY(180deg);

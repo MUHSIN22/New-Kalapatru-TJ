@@ -385,6 +385,14 @@
         grid-template-columns: 1fr;
         grid-template-areas: 'content';
     }
+    .testimonials-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'carousel';
+    }
+    .testimonials-wrapper .navigation-wrapper{
+        display: none;
+    }
+    
 }
 @media only screen and (max-width: 768px) {
     .home-page .home-banner{

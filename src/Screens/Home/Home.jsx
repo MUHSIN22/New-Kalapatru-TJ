@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Home.css'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,12 +10,10 @@ import HomeSlider from '../../Components/HomeSlider/HomeSlider';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import SliderCard from '../../Components/sliderCard/SliderCard';
+import FaqList from '../../JSON DB/FaqList';
 
 export default function Home() {
-    const sliderContainer = useRef(null)
-    useEffect(() => {
-        console.log(sliderContainer.current.offsetWidth);
-    },[])
+
   return (
     <main className="home-page">
         {/* <button className="btn-quick-service">Quick Service</button> */}
@@ -25,25 +23,24 @@ export default function Home() {
             </div>
             <div className="banner-content">
                 <h1 className="main-title">
-                    Invest in <span>Mutual Funds</span>
+                    Invest in <span>Mutual Funds / IPO / Equity / Mutual Funds / Gold ETF</span>
                 </h1>
-                <h3 className="section-subtitle">Trusted by many peoples. <br /> Start investing Today </h3>
+                <h3 className="section-subtitle">Trusted by Millions for<br /> multiplying their investment!  </h3>
                 <button className="btn-get-started">Get Started</button>
             </div>
         </section>
 
         <section className="welcome-section container-padding">
             <div className="welcome-content">
-                <h1 className="section-title">Welcome To Kalpataru Multiplier Ltd.</h1>
+                <h1 className="section-title">Kalpataru Multiplier Ltd.</h1>
                 <div className="welcome-card">
                     <p className="card-para section-para">
-                        Kalpataru is a wishful Devine Tree and in present context a 
-                        widely Trusted, Time tested and Transparent Share Broker, 
-                        Investment Advisor and D.P. of this region. Kalpataru offers 
-                        a complete solution to all your Investment problems, needs 
-                        and requirements since 1992. Our field of operation is Share 
-                        Trading, Commodity, Derivative (F&O) Trading, Currency, IPO, 
-                        Demat, Mutual Fund and Pan Card Services.
+                        The desired Devine Tree, Kalpataru is a widely regarded, 
+                        time-tested, and transparent Share Broker, Investment Distributor,
+                         and D.P. in the current setting of this region. All of your investment 
+                         needs and concerns can be met by Kalpataru, which has been in business since 
+                         1992. Derivative (F&O) trading, currency trading, IPO, mutual fund, and 
+                         pan card services are all part of our business.
                     </p>
                     <button className="btn-read-more">Read More</button>
                 </div>
@@ -86,7 +83,7 @@ export default function Home() {
         </section>
 
         <section className="offered-product-section container-padding">
-            <h1 className="section-title">Products Offered Within Exchanges</h1>
+            <h1 className="section-title">Offered Products with Exchanges</h1>
             <div className="op-image-wrapper">
                 <img src="/images/home/offered-product.png" alt="" className="op-image" />
             </div>
@@ -105,7 +102,7 @@ export default function Home() {
         </section>
         
         <section className="contact-section container-padding">
-            <h1 className="section-title">Make Right Decision With Us</h1>
+            <h1 className="section-title">Choose the correct path to Multiplying your wealth</h1>
             <div className="section-subtitle">Drop Your Details</div>
 
             <form className="contact-form">
@@ -122,7 +119,7 @@ export default function Home() {
 
         <section className="know-more-section container-padding">
             <div className="know-more-content">
-                <h1 className="section-title">Want to know more Kalpataru ?</h1>
+                <h1 className="section-title">Find out more about us!</h1>
                 <h3 className="section-subtitle">Just click on the button to know more</h3>
                 <button className="btn-about-us">About Us</button>
             </div>
@@ -176,15 +173,15 @@ export default function Home() {
         </section>
 
 
-        <section className="client-testimonial">
+        {/* <section className="client-testimonial">
             <h1 className="section-title">Client's Testimonials</h1>
             <div className="testimonials-wrapper container-padding">
                 <div className="navigation-wrapper">
-                    <img src="/images/home/left-arrow.png" alt="" className="navigation" />
-                    <img src="/images/home/right-arrow.png" alt="" className="navigation" />
+                    <img src="/images/home/left-arrow.png" alt="" onClick={() => slideCarousel(-1)} className="navigation" />
+                    <img src="/images/home/right-arrow.png" alt="" onClick={() => slideCarousel(1)} className="navigation" />
                 </div>
                 <div className="slider-container" ref={sliderContainer}>
-                    <OwlCarousel className='owl-theme' loop margin={24} items={5}>
+                    <OwlCarousel className='owl-theme' loop margin={24} items={items}>
                         <SliderCard/>
                         <SliderCard/>
                         <SliderCard/>
@@ -195,15 +192,16 @@ export default function Home() {
                     </OwlCarousel>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         <section className="faq-section container-padding">
             <h1 className="section-title">FAQ's</h1>
             <div className="faq-wrapper">
-                <FaqCard/>
-                <FaqCard/>
-                <FaqCard/>
-                <FaqCard/>
+                {
+                    FaqList.map((item,index) => (
+                        <FaqCard key={index} data={item}/>
+                    ))
+                }
             </div>
         </section>
     </main>
