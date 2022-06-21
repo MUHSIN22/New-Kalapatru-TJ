@@ -1,0 +1,25 @@
+.investor-charter-body .section-subtitle{
+    color: var(--red-primary);
+}
+.investor-charter-body .tbl-header{
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--dark-primary);
+    margin: 2rem 0;
+    color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+    .investor-charter-body .tbl-wrapper{
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .investor-charter-body .tbl-header{
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .investor-charter-body .section-title{
+        font-size: 1.1rem;
+    }
+}

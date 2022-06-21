@@ -1,0 +1,59 @@
+.Accordion-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Accordion-Dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Accordion-Trigger {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #455a64;
+  padding: 2rem;
+  color: #ffff;
+}
+.A-Trigger {
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+}
+.Accordion-Target {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  background-color: #fff6ea;
+  border-radius: 10px;
+  gap: 1rem;
+}
+.Accordion-Target p {
+  width: 80%;
+  text-align: justify;
+}
+.Accordion-Upper-Cup {
+  width: 10%;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+.Accordion-Bottom-Cup {
+  width: 10%;
+  position: absolute;
+  top: 80%;
+  right: 2%;
+}

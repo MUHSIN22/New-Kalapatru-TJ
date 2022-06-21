@@ -1,0 +1,144 @@
+.services-page .service-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.services-page .main-title{
+    text-align: center;
+    margin: 3rem 0;
+}
+.services-page .bond-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    grid-template-areas: 'image main''sub sub';
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: -15px -15px 20px rgba(197, 63, 63, 0.3), 15px 15px 20px rgba(0, 0, 0, 0.25);
+    max-width: 1000px;
+    margin-top: 8rem;
+}
+.services-page .main-content{
+    grid-area: main;
+}
+.services-page .bond-img{
+    grid-area: image;
+    width: 100%;
+    margin-top: -8rem;
+}
+.services-page .sub-content{
+    grid-area: sub;
+}
+.services-page .pention-schema-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'content';
+    width: 100%;
+    max-width: 800px;
+}
+.services-page .top-card,
+.services-page .bottom-card{
+    width: 100%;
+    grid-area: content;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.services-page .top-card{
+    transform: translateX(-5%);
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'image content';
+    background: #fff;
+    box-shadow: var(--shadow-primary);
+}
+.services-page .card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.services-page .card-content .section-para{
+    margin: 1rem 0;
+}
+.services-page .btn-see-more{
+    padding: 1rem;
+    background: var(--dark-primary);
+    width: clamp(10rem,50%,100%);
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.services-page .pension-img{
+    grid-area: image;
+    width: 100%;
+    margin-left: -4rem;
+}
+
+.services-page .bottom-card{
+    background: var(--dark-primary);
+    transform: translateX(5%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-page .bottom-card .section-para{
+    text-align: center;
+    color: #fff;
+}
+.services-page .bottom-card .btn-see-more{ 
+    background: #fff;
+    color: #000;
+    margin: 1rem 0;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .services-page .pension-img{
+        margin-left: 0;
+    }    
+    .services-page .top-card{
+        grid-gap: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .services-page .bond-card{
+        margin-top: 2rem;
+    }
+    .services-page .bond-img{
+        margin-top: -4rem;
+    }
+    .pention-schema-grid{
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .services-page .bond-card{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'image''main''sub';
+        padding: 1rem;
+        box-shadow: -4px -4px 20px rgba(197, 63, 63, 0.3), 15px 15px 20px rgba(0, 0, 0, 0.25);
+
+    }
+    .services-page .main-title{
+        margin: 1.5rem 0;
+    }
+    .services-page .top-card{
+        grid-area: 'content';
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+}
