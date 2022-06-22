@@ -64,9 +64,10 @@
 .investor-attention-card .circle{
     width: 2rem;
     height: 2rem;
-    background: #C53F3F;
+    background: var(--dark-primary);
     border-radius: 50%;
     transition: all 0.3s ease;
+    z-index: 1;
 }
 .investor-attention-card--active .circle{
     background: #fff;

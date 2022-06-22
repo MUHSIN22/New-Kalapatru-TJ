@@ -111,7 +111,7 @@ export default [
             {
                 title: "Privacy Policy",
                 type: 'link',
-                link: ""
+                link: "/privacy-policy"
             },
             {
                 title: "Terms Of Use",

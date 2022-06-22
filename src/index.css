@@ -52,8 +52,17 @@ a{
   font-size: 1.1rem;
   color: #000;
 }
+.title-60-600{
+  font-size: 30px;
+  font-weight: 600;
+}
+.title-50-600{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 2rem 0;
+}
 .container-padding{
-  padding: 1rem 5%;
+  padding: 1rem 10%;
 }
 @media only screen and (max-width: 1200px) {
   .main-title{

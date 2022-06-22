@@ -7,6 +7,7 @@
 .services-page .main-title{
     text-align: center;
     margin: 3rem 0;
+    font-size: 35px;
 }
 .services-page .bond-card{
     width: 100%;
@@ -17,7 +18,7 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: -15px -15px 20px rgba(197, 63, 63, 0.3), 15px 15px 20px rgba(0, 0, 0, 0.25);
-    max-width: 1000px;
+    max-width: 1250px;
     margin-top: 8rem;
 }
 .services-page .main-content{
@@ -44,7 +45,7 @@
     grid-area: content;
     position: relative;
     transition: all 0.3s ease;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 20px;
 }
 .services-page .top-card{
@@ -63,7 +64,9 @@
     flex-direction: column;
 }
 .services-page .card-content .section-para{
-    margin: 1rem 0;
+    margin: 2rem 0;
+    font-size: 20px;
+    line-height: 30px;
 }
 .services-page .btn-see-more{
     padding: 1rem;
@@ -95,11 +98,22 @@
 .services-page .bottom-card .section-para{
     text-align: center;
     color: #fff;
+    opacity: 0;
 }
 .services-page .bottom-card .btn-see-more{ 
     background: #fff;
     color: #000;
     margin: 1rem 0;
+}
+.services-page .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.services-page .section-para{
+    margin: 2rem 0;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 
